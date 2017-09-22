@@ -79,7 +79,10 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: LaUltima_production
-  username: LaUltima
-  password: <%= ENV['LAULTIMA_DATABASE_PASSWORD'] %>
+  adapter: PostgreSQL
+  encoding: unicode
+  pool: 5
+  host: ec2-23-21-224-199.compute-1.amazonaws.com
+  database: dfbev8q8o6dsmf
+  username: ifznalanvldhej
+  password: 387a92f4c9815dc00fb9a658a4944cef24d7eedf153af1facce95597b6e2f2b9
